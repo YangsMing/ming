@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{padding: 0px; margin: 0px; font-weight:500; line-height:22px; transition:0.3s;}
+.photo{height:1000px; background: #5886ba;}
+.photo .picture{height:291px; width:433px; position:relative; top:350px; left:700px;}
+
+.photo .picture img{position:absolute; top:0px; left:0px; border:2px solid #FFFFFF;}
+.photo .picture .img1{transform:rotate(2deg); z-index:4;}
+.photo .picture .img2{transform:rotate(2deg); z-index:2;}
+.photo .picture .img3{transform:rotate(-3deg); z-index:3;}
+.photo .picture .img4{transform:rotate(2deg); z-index:2;}
+.photo .picture .img5{transform:rotate(2deg); z-index:3;}
+.photo .picture .img6{transform:rotate(2deg); z-index:1;}
+.photo .picture .img7{transform:rotate(-3deg); z-index:1;}
+.photo .picture:hover .img1{transform:rotate(0deg);}
+.photo .picture:hover .img2{top:-10px; left:380px;}
+.photo .picture:hover .img3{top:-250px; left:200px;}
+.photo .picture:hover .img4{top:250px; left:-200px;}
+.photo .picture:hover .img5{top:0px; left:-390px;}
+.photo .picture:hover .img6{top:250px; left:230px;}
+.photo .picture:hover .img7{top:-250px; left:-200px;}
+
+@media screen and (max-width:970px){
+	.photo .picture{left:74px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="photo">
+	<div class="picture">
+		<img src="Kitten_1.jpg" alt="dog" class="img1">
+		<img src="Kitten_2.jpg" alt="dog" class="img2">
+		<img src="Kitten_3.jpg" alt="dog" class="img3">
+		<img src="Kitten_4.jpg" alt="dog" class="img4">
+		<img src="Kitten_5.jpg" alt="dog" class="img5">
+		<img src="Kitten_6.jpg" alt="dog" class="img6">
+		<img src="Kitten_7.jpg" alt="dog" class="img7">
+	</div>
+</div>
+</body>
+</html>
